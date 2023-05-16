@@ -1,5 +1,6 @@
 nav {
   min-height: 60px;
+
   .wrapper {
     padding: 0 4rem;
     width: 100%;
@@ -8,6 +9,7 @@ nav {
     align-items: center;
     transition: 0.3s ease-in-out;
     position: relative;
+
     .brand {
       a {
         display: flex;
@@ -22,12 +24,48 @@ nav {
         outline: 2px dashed transparent;
         cursor: pointer;
         &:hover {
-          // fill: #64fad91a;
-          fill: red;
+          fill: #64fad91a;
         }
         &:focus {
           outline-color: var(--theme-color);
           fill: #64fad91a;
+        }
+      }
+    }
+
+    .nav-items {
+      display: flex;
+      gap: 3rem;
+      color: var(--lightest-slate);
+      font-size: var(--tsm1);
+      font-family: var(--firacode);
+      &-list {
+        display: flex;
+        gap: 3rem;
+        list-style-type: none;
+        &-item {
+          a {
+            outline: 2px dashed transparent;
+            transition: 0.3s ease-in-out;
+            text-decoration: none;
+            color: inherit;
+            &::before {
+              content: '\007B\0020';
+              color: var(--theme-color);
+              font-weight: bold;
+            }
+            &::after {
+              content: '\0020\007D';
+              color: var(--theme-color);
+              font-weight: bold;
+            }
+          }
+          a:focus {
+            outline-color: --theme-color;
+          }
+          &:hover {
+            color: var(--theme-color);
+          }
         }
       }
     }

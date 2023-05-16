@@ -1,16 +1,30 @@
-import { inter } from '../util/fonts';
+import Navbar from '@/section/Navbar';
+import { Fira_Code, Raleway } from 'next/font/google';
 import '../scss/index.scss';
 
 export const metadata = {
   title: 'ocitocit | A passionate frontend developer from Indonesia',
   description: 'A passionate frontend developer from Indonesia'
 };
+const raleway = Raleway({
+  subsets: ['latin'],
+  variable: '--raleway'
+});
+
+const firacode = Fira_Code({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--firacode'
+});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <>{children}</>
+      <body className={`${raleway.variable} ${firacode.variable}`}>
+        <>
+          <Navbar />
+          {children}
+        </>
       </body>
     </html>
   );

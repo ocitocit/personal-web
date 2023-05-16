@@ -1,0 +1,21 @@
+.btn {
+  color: var(--theme-color);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--theme-color);
+  border-radius: 5px;
+  font-size: var(--tsm);
+  outline: none;
+  &:hover,
+  &:focus {
+    transition: 0.2s ease-in-out;
+    background-color: var(--lightest-blue);
+    color: var(--background-color);
+    border-radius: 5px;
+    border-bottom: 3px solid var(--theme-color);
+    border-top: 1px solid var(--theme-color);
+    border-left: 1px solid var(--theme-color);
+    border-right: 1px solid var(--theme-color);
+  }
+}
