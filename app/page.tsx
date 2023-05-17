@@ -1,9 +1,9 @@
-import SocialIcon from '@/components/SocialIcon';
+import Hero from '@/section/Hero';
 
 export default function Home() {
   return (
-    <main className="app">
-      <SocialIcon />
+    <main>
+      <Hero />
     </main>
   );
 }
