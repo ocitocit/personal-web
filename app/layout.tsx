@@ -1,3 +1,4 @@
+import SocialIcon from '@/components/SocialIcon';
 import Navbar from '@/section/Navbar';
 import { Fira_Code, Raleway } from 'next/font/google';
 import '../scss/index.scss';
@@ -20,10 +21,11 @@ const firacode = Fira_Code({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} ${firacode.variable}`}>
+      <body className={`app ${raleway.variable} ${firacode.variable}`}>
         <>
           <Navbar />
           {children}
+          <SocialIcon />
         </>
       </body>
     </html>
