@@ -21,7 +21,6 @@ nav {
         fill: none;
         color: var(--theme-color);
         transition: 0.3s ease-in-out;
-        outline: 2px dashed transparent;
         cursor: pointer;
         &:hover {
           fill: #64fad91a;
@@ -45,7 +44,6 @@ nav {
         list-style-type: none;
         &-item {
           a {
-            outline: 2px dashed transparent;
             transition: 0.3s ease-in-out;
             text-decoration: none;
             color: inherit;
