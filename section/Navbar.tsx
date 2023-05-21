@@ -24,7 +24,7 @@ const Navbar = () => {
             {sectionLinks.map(({ name, link }) => (
               <li key={name} className="nav-items-list-item">
                 <Link href={link} className="nav-items-list-item-link">
-                  {name}
+                  <span className="link">{name}</span>
                 </Link>
               </li>
             ))}
