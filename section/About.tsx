@@ -29,12 +29,7 @@ const About = () => {
           </p>
           <ul className="about-grid-info-list">
             <li className="about-grid-info-list-item">
-              <Image
-                src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
-                alt="Linux"
-                width={92.44}
-                height={30}
-              />
+              <Image src="/icon/LINUX.svg" alt="Linux" width={92.44} height={30} />
             </li>
             <li className="about-grid-info-list-item">
               <Image
