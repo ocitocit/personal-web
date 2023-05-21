@@ -16,10 +16,10 @@
     font-size: var(--tgiant);
     font-family: var(--raleway);
     font-weight: 700;
-    color: var(--light-slate);
+    color: var(--lightest-slate);
   }
   &-title-sub {
-    color: var(--lightest-slate);
+    color: var(--light-slate);
     font-size: clamp(40px, 8vw, 60px);
   }
   &-text {
