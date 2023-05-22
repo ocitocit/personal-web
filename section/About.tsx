@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="title">
-        <h2 className="curlybracket">
+        <h2>
           <span>&#65371;</span> About Me <span>&#65373;</span>
         </h2>
       </div>
