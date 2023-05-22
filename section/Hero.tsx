@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <p className="hero-title">Hi my name is</p>
       <h1 className="hero-title-large">Abdul Rosyid.</h1>
       <h2 className="hero-title-large hero-title-sub">Doing frontend, unlocking potential.</h2>
@@ -20,7 +20,7 @@ const Hero = () => {
           link="https://docs.google.com/document/d/1WlZf8lnblgVUJ0Ami-wy-s02cKyVaJ-zv-1KmBhMpTk/edit?usp=sharing"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

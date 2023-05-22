@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <section className="about" id="about">
       <div className="title">
         <h2 className="curlybracket">
           <span>&#65371;</span> About Me <span>&#65373;</span>
@@ -86,7 +86,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
