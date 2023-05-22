@@ -8,6 +8,7 @@ body {
   background-color: var(--background-color);
 }
 .link {
+  text-decoration: none;
   position: relative;
   &:after {
     content: '';
