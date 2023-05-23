@@ -6,24 +6,24 @@ const SocialIcon = () => {
   const socialLinks = [
     { name: 'Github', icon: <FiGithub />, link: 'https://www.github.com/ocitocit' },
     {
-      name: 'Dribbble',
-      icon: <FiDribbble />,
-      link: 'https://dribbble.com/ocitocit'
-    },
-    {
       name: 'LinkedIn',
       icon: <FiLinkedin />,
       link: 'https://www.linkedin.com/in/ocitocit/'
     },
     {
-      name: 'Figma',
-      icon: <FiFigma />,
-      link: 'https://www.figma.com/@ocitocit'
-    },
-    {
       name: 'Twitter',
       icon: <FiTwitter />,
       link: 'https://twitter.com/0citocit'
+    },
+    {
+      name: 'Dribbble',
+      icon: <FiDribbble />,
+      link: 'https://dribbble.com/ocitocit'
+    },
+    {
+      name: 'Figma',
+      icon: <FiFigma />,
+      link: 'https://www.figma.com/@ocitocit'
     }
   ];
 
