@@ -5,7 +5,10 @@ import '../scss/index.scss';
 
 export const metadata = {
   title: 'ocitocit | A passionate frontend developer from Indonesia',
-  description: 'A passionate frontend developer from Indonesia'
+  description: 'A passionate frontend developer from Indonesia',
+  verification: {
+    google: 'JZ25rAK1bmrTlhyIZdIylQxObcro3f65HbLGBJiY_Hc'
+  }
 };
 const raleway = Raleway({
   subsets: ['latin'],
