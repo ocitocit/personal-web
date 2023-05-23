@@ -1,4 +1,5 @@
 import About from '@/section/About';
+import Experience from '@/section/Experience';
 import Hero from '@/section/Hero';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
+      <Experience />
     </main>
   );
 }
