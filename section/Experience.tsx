@@ -99,7 +99,7 @@ const Experience = () => {
               <span>{expereinces[selected].role}</span>
               <span className="exp-details-position-company">
                 &nbsp;at&nbsp;
-                <Link className="link theme-color" href={expereinces[selected].url} target="_blank">
+                <Link className="link link-color" href={expereinces[selected].url} target="_blank">
                   {expereinces[selected].name}
                 </Link>
               </span>

@@ -7,9 +7,6 @@
 body {
   background-color: var(--background-color);
 }
-.theme-color {
-  color: var(--theme-color);
-}
 .link {
   text-decoration: none;
   position: relative;
@@ -34,5 +31,8 @@ body {
   }
   &:focus {
     outline: none;
+  }
+  &-color {
+    color: var(--theme-color);
   }
 }
