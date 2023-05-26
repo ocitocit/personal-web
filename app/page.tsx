@@ -1,6 +1,7 @@
 import About from '@/section/About';
 import Experience from '@/section/Experience';
 import Hero from '@/section/Hero';
+import Work from '@/section/Work';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
+      <Work />
     </main>
   );
 }
