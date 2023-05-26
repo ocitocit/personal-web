@@ -8,7 +8,6 @@ const Work = () => {
     {
       image: '/note-app.png',
       projectName: 'Note App',
-      projectLink: 'https://netlify.com',
       projectDescription:
         'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
       projectTech: [
@@ -27,7 +26,6 @@ const Work = () => {
     {
       image: '/clone-chatgpt.png',
       projectName: 'Clone ChatGPT',
-      projectLink: 'https://netlify.com',
       projectDescription:
         'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
       projectTech: [
@@ -54,14 +52,7 @@ const Work = () => {
       </div>
       <div className="works-container">
         {projectsData.map(
-          ({
-            image,
-            projectDescription,
-            projectLink,
-            projectExternalLinks,
-            projectName,
-            projectTech
-          }) => {
+          ({ image, projectDescription, projectExternalLinks, projectName, projectTech }) => {
             return (
               <div className="work" key={projectName}>
                 <div className="work-image">
@@ -72,7 +63,15 @@ const Work = () => {
                 </div>
                 <div className="work-info">
                   <p className="work-info-overline">Featured Project</p>
-                  <h3 className="work-info-title">{projectName}</h3>
+                  {projectExternalLinks.externalLink ? (
+                    <Link className="link" href={projectExternalLinks.externalLink} target="_blank">
+                      <h3 className="work-info-title">{projectName}</h3>
+                    </Link>
+                  ) : (
+                    <Link className="link" href={projectExternalLinks.github} target="_blank">
+                      <h3 className="work-info-title">{projectName}</h3>
+                    </Link>
+                  )}
                   <div className="work-info-description">
                     <p>{projectDescription}</p>
                   </div>
