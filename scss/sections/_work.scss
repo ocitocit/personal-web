@@ -50,7 +50,7 @@
           }
         }
         &-overlay {
-          transition: 0.3s ease-in-out;
+          transition: var(--transition);
           z-index: 1;
           position: absolute;
           width: 100%;
@@ -60,7 +60,7 @@
         img {
           z-index: 0;
           filter: grayscale(100%);
-          transition: 0.3s ease-in-out;
+          transition: var(--transition);
         }
       }
       &-info {
@@ -81,7 +81,7 @@
           font-size: var(--txlarge);
           font-family: var(--raleway);
           cursor: pointer;
-          transition: 0.3s ease-in-out;
+          transition: var(--transition);
           &:hover {
             color: var(--theme-color);
           }
@@ -112,14 +112,14 @@
           display: flex;
           gap: 1rem;
           &-item {
-            transition: 0.3s ease-in-out;
+            transition: var(--transition);
             display: flex;
             justify-content: center;
             align-items: center;
             &-link {
               padding: 10px;
               color: var(--lightest-slate);
-              transition: 0.3s ease-in-out;
+              transition: var(--transition);
               &:hover {
                 color: var(--theme-color);
               }

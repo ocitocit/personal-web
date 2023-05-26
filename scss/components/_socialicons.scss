@@ -12,13 +12,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: 0.3s ease-in-out;
+      transition: var(--transition);
       &-link {
         padding: 10px;
         color: var(--lightest-slate);
         transition: 0.3s ease-in-out;
         &:hover {
-          color: var(--theme-color);
+          color: var(--transition);
           &:focus {
             outline-color: var(--theme-color);
             transform: translateY(-4px);
