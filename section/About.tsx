@@ -24,8 +24,8 @@ const About = () => {
           </p>
 
           <p className="about-grid-info-text">
-            Here are a few cutting-edge technologies I&apos;ve been passionately delving into
-            lately:
+            Here are a few cutting-edge technologies & tools I&apos;ve been passionately delving
+            into lately:
           </p>
           <ul className="about-grid-info-list">
             <li className="about-grid-info-list-item">
@@ -51,6 +51,9 @@ const About = () => {
             </li>
             <li className="about-grid-info-list-item">
               <Image src="/icon/CSS3.svg" alt="CSS" width={82.5} height={30} />
+            </li>
+            <li className="about-grid-info-list-item">
+              <Image src="/icon/BOOTSTRAP.svg" width={132.05} height={30} alt="SASS" />
             </li>
             <li className="about-grid-info-list-item">
               <Image src="/icon/SASS.svg" width={83.66} height={30} alt="SASS" />
