@@ -2,6 +2,27 @@ import Image from 'next/image';
 import React from 'react';
 
 const About = () => {
+  const techList = [
+    { name: 'Linux', img: '/icon/LINUX.svg', width: 92.44 },
+    { name: 'React', img: '/icon/REACT.svg', width: 92.45 },
+    { name: 'React-Native', img: '/icon/REACT-NATIVE.svg', width: 151.16 },
+    { name: 'Next.js', img: '/icon/NEXT.svg', width: 83.66 },
+    { name: 'Javascript', img: '/icon/JAVASCRIPT.svg', width: 135.62 },
+    { name: 'Typescript', img: '/icon/TYPESCRIPT.svg', width: 135.62 },
+    { name: 'HTML', img: '/icon/HTML5.svg', width: 94.6 },
+    { name: 'CSS', img: '/icon/CSS3.svg', width: 82.5 },
+    { name: 'Bootstraps', img: '/icon/BOOTSTRAP.svg', width: 132.05 },
+    { name: 'SASS', img: '/icon/SASS.svg', width: 83.66 },
+    { name: 'Tailwindcss', img: '/icon/TAILWINDCSS.svg', width: 148.65 },
+    { name: 'GIT', img: '/icon/GIT.svg', width: 72.62 },
+    { name: 'Github', img: '/icon/GITHUB.svg', width: 102.35 },
+    { name: 'Express.Js', img: '/icon/EXPRESSJS.svg', width: 131.29 },
+    { name: 'Node.Js', img: '/icon/NODEJS.svg', width: 107.96 },
+    { name: 'MongoDB', img: '/icon/MONGODB.svg', width: 118.74 },
+    { name: 'Firebase', img: '/icon/FIREBASE.svg', width: 116.88 },
+    { name: 'Vercel', img: '/icon/VERCEL.svg', width: 100.18 }
+  ];
+
   return (
     <section className="about" id="about">
       <div className="title">
@@ -28,57 +49,11 @@ const About = () => {
             into lately:
           </p>
           <ul className="about-grid-info-list">
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/LINUX.svg" alt="Linux" width={92.44} height={30} />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/REACT.svg" alt="React" width={92.45} height={30} />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/REACT-NATIVE.svg" width={151.16} height={30} alt="React-Native" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/NEXT.svg" width={83.66} height={30} alt="Next Js" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/JAVASCRIPT.svg" width={135.62} height={30} alt="Javascript" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/TYPESCRIPT.svg" width={135.62} height={30} alt="Typescript" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/HTML5.svg" alt="HTML" width={94.6} height={30} />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/CSS3.svg" alt="CSS" width={82.5} height={30} />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/BOOTSTRAP.svg" width={132.05} height={30} alt="SASS" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/SASS.svg" width={83.66} height={30} alt="SASS" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/TAILWINDCSS.svg" width={148.65} height={30} alt="Tailwindcss" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/GIT.svg" width={72.62} height={30} alt="GIT" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/GITHUB.svg" width={102.35} height={30} alt="Github" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/EXPRESSJS.svg" width={131.29} height={30} alt="Express Js" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/NODEJS.svg" width={107.96} height={30} alt="Node Js" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/MONGODB.svg" width={118.74} height={30} alt="MongoDB" />
-            </li>
-            <li className="about-grid-info-list-item">
-              <Image src="/icon/FIREBASE.svg" width={116.88} height={30} alt="Firebase" />
-            </li>
+            {techList.map(({ name, img, width }) => (
+              <li key={name} className="about-grid-info-list-item">
+                <Image alt={name} src={img} width={width} height={30} />
+              </li>
+            ))}
           </ul>
         </div>
         <div className="about-grid-photo">
