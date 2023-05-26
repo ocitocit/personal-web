@@ -19,8 +19,8 @@
         transition: 0.3s ease-in-out;
         &:hover {
           color: var(--transition);
+          color: var(--theme-color);
           &:focus {
-            outline-color: var(--theme-color);
             transform: translateY(-4px);
             color: var(--theme-color);
           }
