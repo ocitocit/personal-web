@@ -1,7 +1,9 @@
+'use client';
+
 import Button from '@/components/Button';
 import Logo from '@/components/Logo';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const sectionLinks = [
@@ -11,9 +13,17 @@ const Navbar = () => {
     { name: 'Contact', link: '/#contact' }
   ];
 
+  const [navBarVisible, setNavBarVisible] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.pageYOffset > 100 ? setNavBarVisible(true) : setNavBarVisible(false);
+    });
+  }, []);
+
   return (
     <nav>
-      <div className="wrapper">
+      <div className={`wrapper ${navBarVisible ? 'blur-nav' : ''}`}>
         <div className="brand">
           <Link href="/">
             <Logo />

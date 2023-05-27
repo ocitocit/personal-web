@@ -42,3 +42,15 @@ html {
     color: var(--theme-color);
   }
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  &-track {
+    background-color: var(--background-color);
+  }
+  &-thumb {
+    background-color: var(--dark-slate);
+    border: 3px solid var(--background-color);
+    border-radius: 10px;
+  }
+}
