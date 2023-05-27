@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className={`wrapper ${navBarVisible ? 'blur-nav' : ''}`}>
+      <div className={`wrapper ${navBarVisible && 'blur-nav'}`}>
         <div className="brand">
           <Link href="/">
             <Logo />
