@@ -31,10 +31,10 @@ const Work = () => {
       projectTech: [
         { name: 'Next.js', img: '/icon/NEXT.svg', widht: 83.66 },
         { name: 'React', img: '/icon/REACT.svg', widht: 92.45 },
-        { name: 'Next.js', img: '/icon/TAILWINDCSS.svg', widht: 148.65 },
-        { name: 'Next.js', img: '/icon/FIREBASE.svg', widht: 116.88 },
-        { name: 'Next.js', img: '/icon/OPENAI.svg', widht: 72.62 },
-        { name: 'Next.js', img: '/icon/VERCEL.svg', widht: 100.18 }
+        { name: 'Tailwindcss', img: '/icon/TAILWINDCSS.svg', widht: 148.65 },
+        { name: 'Firebase', img: '/icon/FIREBASE.svg', widht: 116.88 },
+        { name: 'OpenAI', img: '/icon/OPENAI.svg', widht: 107.96 },
+        { name: 'Vercel', img: '/icon/VERCEL.svg', widht: 100.18 }
       ],
       projectExternalLinks: {
         github: 'https://github.com/ocitocit/clone-chatgpt',
