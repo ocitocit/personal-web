@@ -1,3 +1,10 @@
 main {
   margin: 0 15rem;
+  transition: var(--transition);
+}
+
+.blur {
+  filter: blur(5px) brightness(0.7);
+  pointer-events: none;
+  user-select: none;
 }
