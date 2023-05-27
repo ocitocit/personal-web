@@ -4,7 +4,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="hero">
-      <p className="hero-title">Hi my name is</p>
+      <p className="hero-title">Hi, my name is</p>
       <h1 className="hero-title-large">Abdul Rosyid.</h1>
       <h2 className="hero-title-large hero-title-sub">Doing frontend, unlocking potential.</h2>
       <h3 className="hero-text">
