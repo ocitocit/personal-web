@@ -1,5 +1,6 @@
 .works {
-  gap: 15rem 0;
+  margin: 5.625rem auto 15rem auto;
+  padding-top: 150px;
   .title {
     font-family: var(--raleway);
     color: var(--lightest-slate);
@@ -34,7 +35,7 @@
       &-image {
         &-container {
           position: relative;
-          width: 600px;
+          width: 533.33px;
           height: 300px;
         }
         position: absolute;
@@ -155,7 +156,7 @@
       .work {
         justify-content: flex-start;
         .work-info {
-          width: 600px;
+          width: 533.33px;
           height: 300px;
           background-color: rgba(31, 10, 44, 0.592);
           align-items: flex-start;
