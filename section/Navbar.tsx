@@ -72,14 +72,21 @@ const Navbar = () => {
               }}
             />
           ) : (
-            <GiHamburgerMenu
-              onClick={(e) => {
-                e.stopPropagation();
-                setResponsiveNavVisible(true);
-              }}
-            />
+            <>
+              <div className="nav-items-portfolio-button">
+                <Button text="Portfolio" link="/#work" target="_self" />
+              </div>
+
+              <GiHamburgerMenu
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setResponsiveNavVisible(true);
+                }}
+              />
+            </>
           )}
         </div>
+
         <div className={`nav-items ${responsiveNavVisible && 'nav-responsive'}`}>
           <ul className="nav-items-list">
             {sectionLinks.map(({ name, link }) => (

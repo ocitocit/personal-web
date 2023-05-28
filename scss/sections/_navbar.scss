@@ -81,10 +81,28 @@ nav {
         display: flex;
       }
     }
+    @media screen and (max-width: 425px) {
+      .nav-responsive-toggle {
+        gap: 0 !important;
+
+        .nav-items-portfolio-button {
+          .btn {
+            padding: 5px 5px;
+          }
+        }
+      }
+    }
+
     @media screen and (max-width: 768px) {
       padding: 0 2rem;
       .nav-responsive-toggle {
         display: flex;
+        align-items: center;
+        gap: 0 1rem;
+        .nav-items-portfolio-button {
+          display: flex;
+          padding: 0.5rem 1rem;
+        }
       }
 
       .nav-items {
