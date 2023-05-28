@@ -30,14 +30,14 @@
         }
       }
       &:last-child {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
     }
     &::after {
       content: '';
       display: block;
       width: 2px;
-      height: 90px;
+      height: 130px;
       background-color: var(--lightest-slate);
       margin: 0px auto;
     }
