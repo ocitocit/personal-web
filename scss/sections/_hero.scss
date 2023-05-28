@@ -33,6 +33,14 @@
   }
   &-button {
     margin-top: 2rem;
+    display: flex;
+    gap: 0 1rem;
+    .work-btn {
+      background-color: #64fad91a;
+      &:hover {
+        background-color: transparent;
+      }
+    }
     .btn {
       padding: 1rem 2rem;
       font-size: var(--tbase);

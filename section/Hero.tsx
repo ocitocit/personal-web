@@ -15,6 +15,7 @@ const Hero = () => {
         every project.
       </h3>
       <div className="hero-button">
+        <Button text="See my work" link="/#work" styles="work-btn" target="_self" />
         <Button
           text="Download Resume"
           link="https://docs.google.com/document/d/1WlZf8lnblgVUJ0Ami-wy-s02cKyVaJ-zv-1KmBhMpTk/edit?usp=sharing"
