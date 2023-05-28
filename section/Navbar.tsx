@@ -92,7 +92,6 @@ const Navbar = () => {
           </ul>
           <div className="nav-items-button">
             <Button
-              styles="btn-nav"
               text="Resume"
               link="https://docs.google.com/document/d/1WlZf8lnblgVUJ0Ami-wy-s02cKyVaJ-zv-1KmBhMpTk/edit?usp=sharing"
             />
