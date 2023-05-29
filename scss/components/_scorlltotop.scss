@@ -1,0 +1,29 @@
+.scrolltotop {
+  z-index: 20;
+  position: fixed;
+  bottom: 3rem;
+  right: 4rem;
+  place-items: center;
+  color: var(--light-slate);
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 3px solid var(--light-slate);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  &:hover {
+    transform: translateY(-4px);
+    color: var(--theme-color);
+  }
+  &-show {
+    display: grid;
+  }
+  &-hide {
+    display: none;
+  }
+  @media screen and (max-width: 1080px) {
+    right: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+  }
+}
