@@ -2,6 +2,7 @@ import SocialIcon from '@/components/SocialIcon';
 import Navbar from '@/section/Navbar';
 import { Fira_Code, Raleway } from 'next/font/google';
 import '../scss/index.scss';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 export const metadata = {
   title: 'ocitocit | A passionate frontend developer from Indonesia',
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
           {children}
           <SocialIcon />
+          <ScrollToTopButton />
         </>
       </body>
     </html>

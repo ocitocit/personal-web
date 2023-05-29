@@ -16,17 +16,10 @@
       &-link {
         padding: 10px;
         color: var(--lightest-slate);
-        transition: 0.3s ease-in-out;
-        &:hover {
-          color: var(--transition);
-          color: var(--theme-color);
-          &:focus {
-            transform: translateY(-4px);
-            color: var(--theme-color);
-          }
-        }
+        transition: var(--transition);
         &:hover {
           transform: translateY(-4px);
+          color: var(--theme-color);
         }
       }
       &:last-child {
@@ -41,5 +34,11 @@
       background-color: var(--lightest-slate);
       margin: 0px auto;
     }
+  }
+  @media screen and (max-width: 1080px) {
+    left: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }
