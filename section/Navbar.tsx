@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgClose } from 'react-icons/cg';
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 
 const Navbar = () => {
   const sectionLinks = [
@@ -71,38 +71,58 @@ const Navbar = () => {
           </Link>
         </motion.div>
 
-        <motion.div
-          className="nav-responsive-toggle"
-          initial={{ opacity: 0, y: 5 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.3,
-            ease: 'easeInOut'
-          }}
-        >
+        <div className="nav-responsive-toggle">
           {/* hamburger menu*/}
           {responsiveNavVisible ? (
-            <CgClose
-              onClick={(e) => {
-                e.stopPropagation();
-                setResponsiveNavVisible(false);
+            <motion.div
+              className="nav-responsive-toggle"
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.3,
+                ease: 'easeInOut'
               }}
-            />
-          ) : (
-            <>
-              <div className="nav-items-portfolio-button">
-                <Button text="Portfolio" link="/#work" target="_self" />
-              </div>
-
-              <GiHamburgerMenu
+            >
+              <CgClose
                 onClick={(e) => {
                   e.stopPropagation();
-                  setResponsiveNavVisible(true);
+                  setResponsiveNavVisible(false);
                 }}
               />
+            </motion.div>
+          ) : (
+            <>
+              <motion.div
+                className="nav-items-portfolio-button"
+                initial={{ opacity: 0, y: 5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: 'easeInOut',
+                  delay: 0.3
+                }}
+              >
+                <Button text="Portfolio" link="/#work" target="_self" />
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: 'easeInOut'
+                }}
+              >
+                <GiHamburgerMenu
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setResponsiveNavVisible(true);
+                  }}
+                />
+              </motion.div>
             </>
           )}
-        </motion.div>
+        </div>
 
         <div className={`nav-items ${responsiveNavVisible && 'nav-responsive'}`}>
           <ul className="nav-items-list">
