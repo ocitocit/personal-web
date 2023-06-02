@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const About = () => {
@@ -24,7 +27,18 @@ const About = () => {
   ];
 
   return (
-    <section className="about" id="about">
+    <motion.section
+      className="about"
+      id="about"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.9 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 }
+      }}
+    >
       <div className="title">
         <h2>
           <span>&#65371;</span> About Me <span>&#65373;</span>
@@ -64,7 +78,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
