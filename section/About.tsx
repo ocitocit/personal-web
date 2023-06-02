@@ -33,7 +33,7 @@ const About = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.9 }}
+      transition={{ duration: 0.7 }}
       variants={{
         visible: { opacity: 1, y: -50 },
         hidden: { opacity: 0, y: 0 }

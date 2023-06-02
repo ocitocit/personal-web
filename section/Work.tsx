@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -45,16 +48,37 @@ const Work = () => {
 
   return (
     <section className="works" id="work">
-      <div className="title">
+      <motion.div
+        className="title"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+        variants={{
+          visible: { opacity: 1, y: -50 },
+          hidden: { opacity: 0, y: 0 }
+        }}
+      >
         <h2>
           <span>&#65371;</span> Some Things I&apos;ve Built <span>&#65373;</span>
         </h2>
-      </div>
+      </motion.div>
       <div className="works-container">
         {projectsData.map(
           ({ image, projectDescription, projectExternalLinks, projectName, projectTech }) => {
             return (
-              <div className="work" key={projectName}>
+              <motion.div
+                className="work"
+                key={projectName}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}
+                variants={{
+                  visible: { opacity: 1, y: -50 },
+                  hidden: { opacity: 0, y: 0 }
+                }}
+              >
                 <div className="work-image">
                   <div className="work-image-overlay"></div>
                   <div className="work-image-container">
@@ -108,7 +132,7 @@ const Work = () => {
                     </ul>
                   )}
                 </div>
-              </div>
+              </motion.div>
             );
           }
         )}

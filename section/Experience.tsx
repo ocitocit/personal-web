@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
@@ -71,7 +72,18 @@ const Experience = () => {
   ];
 
   return (
-    <section className="experience" id="experience">
+    <motion.section
+      className="experience"
+      id="experience"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 }
+      }}
+    >
       <div className="title">
         <h2>
           <span>&#65371;</span> Where I&apos;ve Worked <span>&#65373;</span>
@@ -117,7 +129,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

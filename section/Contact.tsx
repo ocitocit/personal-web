@@ -1,9 +1,23 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import Button from '@/components/Button';
 import React from 'react';
 
 const Contact = () => {
   return (
-    <section className="contact" id="contact">
+    <motion.section
+      className="contact"
+      id="contact"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 }
+      }}
+    >
       <h2 className="contact-title">
         <span>&#65371;</span> What&apos;s Next? <span>&#65373;</span>
       </h2>
@@ -15,7 +29,7 @@ const Contact = () => {
       <div className="contact-cta">
         <Button link="mailto:ocritocrit@gmail.com" text="Say Hello" />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
