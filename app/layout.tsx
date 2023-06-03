@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Fira_Code, Raleway } from 'next/font/google';
 import '../scss/index.scss';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import Loader from '@/components/Loader';
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -19,6 +20,15 @@ const firacode = Fira_Code({
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // animation loading intro page
+  const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+
+  const loaderLoaded = () => {
+    setIsLoading(false);
+    setTimeout(() => setShowContent(true), 450);
+  };
+
   return (
     <html lang="en">
       <head>
@@ -31,12 +41,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className={`app ${raleway.variable} ${firacode.variable}`}>
-        <>
-          <Navbar />
-          {children}
-          <SocialIcon />
-          <ScrollToTopButton />
-        </>
+        {showContent && (
+          <>
+            <Navbar />
+            {children}
+            <SocialIcon />
+            <ScrollToTopButton />
+          </>
+        )}
+        <Loader isLoading={isLoading} const setIsLoading={loaderLoaded} />
       </body>
     </html>
   );
