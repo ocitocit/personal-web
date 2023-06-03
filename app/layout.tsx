@@ -7,6 +7,7 @@ import { Fira_Code, Raleway } from 'next/font/google';
 import '../scss/index.scss';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Loader from '@/components/Loader';
+import Footer from '@/section/Footer';
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -45,8 +46,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <>
             <Navbar />
             {children}
-            <SocialIcon />
             <ScrollToTopButton />
+            <Footer />
           </>
         )}
         <Loader isLoading={isLoading} const setIsLoading={loaderLoaded} />
