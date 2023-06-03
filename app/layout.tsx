@@ -1,16 +1,11 @@
+'use client';
+
 import SocialIcon from '@/components/SocialIcon';
 import Navbar from '@/section/Navbar';
 import { useState } from 'react';
 import { Fira_Code, Raleway } from 'next/font/google';
 import '../scss/index.scss';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-// export const metadata = {
-//   title: 'ocitocit | A passionate frontend developer from Indonesia',
-//   description: 'A passionate frontend developer from Indonesia',
-//   verification: {
-//     google: 'JZ25rAK1bmrTlhyIZdIylQxObcro3f65HbLGBJiY_Hc'
-//   }
-// };
 
 const raleway = Raleway({
   subsets: ['latin'],
