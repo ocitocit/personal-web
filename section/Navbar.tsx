@@ -66,7 +66,7 @@ const Navbar = () => {
             ease: 'easeInOut'
           }}
         >
-          <Link href="/">
+          <Link href="https://ocitocit.xyz">
             <Logo />
           </Link>
         </motion.div>
