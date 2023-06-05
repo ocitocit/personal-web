@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 4rem;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,8 +26,8 @@
     color: var(--slate);
     font-family: var(--raleway);
     font-size: var(--tlarge);
+    margin-right: 30%;
     font-weight: 600;
-    margin-right: 15%;
     letter-spacing: 0.07rem;
     line-height: 1.6rem;
   }
@@ -47,7 +47,34 @@
       font-family: var(--raleway);
     }
   }
+  @media screen and (max-width: 1440px) {
+    &-title {
+      font-size: var(--tsm2);
+      font-weight: 700;
+    }
+    &-title-large {
+      font-size: var(--tgiant);
+      font-weight: 700;
+    }
+    &-title-sub {
+      font-size: clamp(40px, 8vw, 50px);
+    }
+    &-text {
+      font-size: var(--tbase);
+      margin-right: 0%;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+    }
+    &-button {
+      .btn {
+        padding: 1rem 2rem;
+        font-size: var(--tbase);
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) {
+    padding-bottom: 4rem;
     &-text {
       width: 80%;
     }

@@ -1,5 +1,5 @@
 .about {
-  padding: 15rem 0;
+  padding: 10rem 0;
   .title {
     font-family: var(--raleway);
     color: var(--lightest-slate);
@@ -110,6 +110,17 @@
       }
     }
   }
+  @media screen and (max-width: 1440px) {
+    &-grid {
+      &-info {
+        &-text {
+          font-size: var(--tbase);
+          letter-spacing: 0.05rem;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 1080px) {
     padding: 5rem 0;
     &-grid {
