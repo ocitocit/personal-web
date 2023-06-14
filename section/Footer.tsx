@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <SocialIcon />
-      <div className="footer-text">&#169;2023 Built with Passionate by ocitocit.</div>
+      <div className="footer-text">&#169;{new Date().getFullYear()} Built with Passionate by ocitocit.</div>
     </footer>
   );
 };
